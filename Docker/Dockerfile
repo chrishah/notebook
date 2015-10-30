@@ -15,7 +15,7 @@ RUN locale-gen en_US.UTF-8
 RUN dpkg-reconfigure locales
 
 # basic tools
-RUN apt-get install git vim perl
+RUN apt-get install -y git vim perl
 
 RUN mkdir /home/src
 VOLUME /home/data
